@@ -1,0 +1,22 @@
+{
+  "name": "marshiandev-site",
+  "version": "1.0.0",
+  "description": "Web app for Marshian Software LLC - www.marshiandev.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarshianSoftware/marshiandev-site.git"
+  },
+  "author": "Marshall Pritchett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarshianSoftware/marshiandev-site/issues"
+  },
+  "homepage": "https://github.com/MarshianSoftware/marshiandev-site#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
