@@ -1,12 +1,18 @@
 const express = require('express'),
+      path    = require('path'),
       app     = express()
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
-    res.send("Marshian Software LLC")
+    res.render('landing')
 })
 
 app.get('/home', (req, res) => {
-    res.send("Home Page")
+    res.render('home')
 })
 
 app.get('/about', (req, res) => {
