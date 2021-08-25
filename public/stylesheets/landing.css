@@ -1,52 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600;1,700&family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
-    background: url("/images/starry-bg.png");
+  background: url("/images/starry-bg.png");
+  margin: 0;
+
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-logo {
-    position: absolute;
-    top: 362px;
-    left: 645px;
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
 
-.landing-text {
-    position: absolute;
-    top: 512px;
-    left: 404px;
-    margin: 0;
-
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 47px;
-
-    color: #e6e9e6;
+.spin:hover {
+  animation: rotation 1500ms infinite ease-in-out;
 }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-container {
+  display: flex;
+}
+
+.landing-title {
+  margin: 0;
+
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+
+  color: #49ef05;
+}
+
+.landing-subtitle {
+  margin: 0;
+
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 47px;
+
+  color: #e6e9e6;
+}
+
 
 .blinking {
-    position: absolute;
-    top: 544px;
-    left: 1016px;
-    height: 5px;
-    width: 20px;
-    background-color: #e6e9e6;
+  height: 35px;
+  width: 20px;
+  margin-left: 5px;
+  border-bottom: 4px solid #49ef05;
 }
 
+
 .blink {
-    animation: blink-animation 900ms steps(2, start) infinite;
-    -webkit-animation: blink-animation 900ms steps(2, start) infinite;
+  animation: blink-animation 900ms steps(2, start) infinite;
+  -webkit-animation: blink-animation 900ms steps(2, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
-  @-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
+}
