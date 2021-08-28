@@ -1,18 +1,19 @@
 
 .home-top-content {
     background: url('/images/top-bg-banner.png');
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     height: 1024px;
     width: 1152px;
-    left: 0px;
-    top: 0px;
 }
 
+
 .home-page-title {
-    position: absolute;
-    margin: 0;
-    top: 245px;
-    left: 140px;
+    margin-top: 10%;
+    margin-bottom: 4%;
 
     font-family: Josefin Sans;
     font-style: italic;
@@ -25,9 +26,14 @@
 }
 
 .card {
-    position: absolute;
-    top: 396px;
-    left: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: url("/images/outlines/card-outline-home.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 1023px;
     height: 493px;
 
@@ -35,11 +41,7 @@
 }
 
 .card-title {
-    position: absolute;
     margin: 0;
-    top: 69px;
-    left: 0;
-    z-index: 1;
 
     font-family: Josefin Sans;
     font-style: italic;
@@ -52,9 +54,6 @@
 }
 
 .card-body {
-    position: absolute;
-    top: 214px;
-    left: 171px;
     height: 228px;
     width: 680px;
 
@@ -67,27 +66,22 @@
     color: var(--light-gray);
 }
 
-.card-outline {
-    position: absolute;
-    left: 102px;
-}
-
 .home-bottom-content {
     background: url('/images/bottom-bg-banner.png');
-    position: absolute;
     width: 1152px;
     height: 1056px;
-    left: 0%;
-    right: 0%;
-    top: 49.21%;
-    bottom: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-bottom-title-container {
+    margin-bottom: 5%;
 }
 
 .home-bottom-title {
-    position: absolute;
-    width: 1023px;
-    top: 15%;
-    left: 5.6%;
     margin: 0;
 
     font-family: Josefin Sans;
@@ -101,10 +95,6 @@
 }
 
 .home-bottom-subtitle {
-    position: absolute;
-    width: 1023px;
-    top: 235px;
-    left: 65px;
     margin: 0;
 
     font-family: Roboto Mono;
@@ -117,18 +107,11 @@
     color: var(--light-gray);
 }
 
-.device-icons {
-    position: absolute;
-    top: 343px;
-    left: 255px;
-}
-
 .home-bottom-body {
-    position: absolute;
+    margin-top: 3%;
+
     width: 778px;
     height: 159px;
-    top: 800px;
-    left: 187px;
 
     font-family: Roboto Mono;
     font-style: normal;
