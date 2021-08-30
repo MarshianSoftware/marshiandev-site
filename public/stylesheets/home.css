@@ -1,16 +1,4 @@
 
-.home-top-content {
-    background: url('/images/top-bg-banner.png');
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    height: 1024px;
-    width: 1152px;
-}
-
-
 .home-page-title {
     margin-top: 10%;
     margin-bottom: 4%;
@@ -23,47 +11,6 @@
     text-align: center;
 
     color: var(--green-accent);
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background: url("/images/outlines/card-outline-home.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1023px;
-    height: 493px;
-
-    color: var(--light-gray);
-}
-
-.card-title {
-    margin: 0;
-
-    font-family: Josefin Sans;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 54px;
-    text-align: center;
-
-    color: var(--marshian-red);
-}
-
-.card-body {
-    height: 228px;
-    width: 680px;
-
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-
-    color: var(--light-gray);
 }
 
 .home-bottom-content {

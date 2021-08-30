@@ -1,0 +1,31 @@
+.about-page-title {
+    font-family: Josefin Sans;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+
+    color: var(--green-accent);
+}
+
+.about-upper-title {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.about-lower-title {
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.about-bottom-content {
+    background: url('/images/small-bg-banner.png');
+    width: 1152px;
+    height: 956px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -16,7 +16,7 @@ app.get('/home', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.send("About Page")
+    res.render('about')
 })
 
 app.get('/blog', (req, res) => {
