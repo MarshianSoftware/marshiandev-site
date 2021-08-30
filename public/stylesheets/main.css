@@ -18,17 +18,22 @@ body {
 
 .navbar {
     position: absolute;
-    width: 1023px;
+    width: 1025px;
     height: 125px;
     left: calc(50% - 1023px/2 - 0.5px);
     top: 20px;
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    border-left: 3px solid var(--light-gray);
+
+    background-image: url("/images/outlines/navbar-outline.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* border-left: 3px solid var(--light-gray);
     border-right: 3px solid var(--light-gray);
     border-bottom: 3px solid var(--light-gray);
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 .navbar-logo {
@@ -81,7 +86,7 @@ footer {
 
 .footer-nav {
     margin: 0 auto 20px;
-    width: 1140px;
+    width: 1142px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -115,6 +120,7 @@ footer {
 
 .footer-nav-link {
     text-decoration: none;
+    margin-bottom: 4px;
 
     font-family: Roboto Mono;
     font-style: normal;
@@ -128,6 +134,7 @@ footer {
 
 .footer-nav-link:hover {
     border-bottom: 2px solid var(--green-accent);
+    margin-bottom: 2px;
     color: var(--green-accent);
 }
 
@@ -160,4 +167,13 @@ footer {
     text-align: center;
 
     color: var(--light-gray);
+}
+
+.attribution-link:link, .attribution-link:visited {
+    text-decoration: none;
+    color: var(--green-accent);
+}
+
+.attribution-link:hover {
+    text-decoration: underline;
 }
