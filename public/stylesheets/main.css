@@ -44,7 +44,7 @@ body {
 
 .navbar-links {
     width: 520px;
-    height: 128px;
+    height: 124px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -64,7 +64,7 @@ body {
 
 .nav-link:hover {
     color: var(--green-accent);
-    border-bottom: 3px solid var(--green-accent);
+    border-bottom: 2px solid var(--green-accent);
 }
 
 main {
