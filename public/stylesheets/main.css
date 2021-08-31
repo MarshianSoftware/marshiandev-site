@@ -9,13 +9,18 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background: var(--light-gray);
     width: 100%;
-    height: 2458px;
+    min-height: 100%;
     margin: 0;
 }
 
@@ -33,11 +38,6 @@ body {
     background-image: url("/images/outlines/navbar-outline.png");
     background-repeat: no-repeat;
     background-position: center;
-
-    /* border-left: 3px solid var(--light-gray);
-    border-right: 3px solid var(--light-gray);
-    border-bottom: 3px solid var(--light-gray);
-    border-radius: 10px; */
 }
 
 .navbar-logo {
@@ -72,9 +72,7 @@ body {
 }
 
 main {
-    position: absolute;
-    width: 1152px;
-    height: 2079px;
+    margin-bottom: 100px;
     left: calc(50% - 1152px/2 - 0.5px);
     top: 0px;
 }
@@ -191,15 +189,13 @@ main {
 }
 
 footer {
-    position: absolute;
-    top: 2179px;
     background: url('/images/starry-bg.png');
     width: 100%;
     height: 279px;
 }
 
 .footer-nav {
-    margin: 0 auto 20px;
+    margin: 0 auto;
     width: 1142px;
     height: 100%;
     display: flex;
@@ -212,7 +208,7 @@ footer {
 }
 
 .social-media-icons {
-    margin-top: 10px;
+    margin-top: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -225,7 +221,7 @@ footer {
 }
 
 .footer-nav-links {
-    margin: 10px;
+    margin: 8px;
     width: 40%;
     display: flex;
     flex-direction: row;
@@ -234,7 +230,8 @@ footer {
 
 .footer-nav-link {
     text-decoration: none;
-    margin-bottom: 4px;
+    border-radius: 5px;
+    padding: 4px 10px;
 
     font-family: Roboto Mono;
     font-style: normal;
@@ -244,18 +241,18 @@ footer {
     text-align: center;
 
     color: var(--light-gray);
+    transition-duration: 0.3s;
 }
 
 .footer-nav-link:hover {
-    border-bottom: 2px solid var(--green-accent);
-    margin-bottom: 2px;
-    color: var(--green-accent);
+    background-color: var(--green-accent);
+    color: black;
 }
 
 .scroll-top-btn {
-    
-
     border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
     background: none;
 
     font-family: Roboto Mono;
@@ -265,18 +262,23 @@ footer {
     line-height: 32px;
     text-align: center;
 
-    color: var(--green-accent);
+    color: var(--light-gray);
+    transition-duration: 0.3s;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--marshian-red);
+    color: black;
 }
 
 .footer-legal {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .legal-info {
     margin: 2px 0;
     font-family: Roboto Mono;
-    /* font-style: normal; */
-    font-size: 10px;
+    font-size: 12px;
     line-height: 13px;
     text-align: center;
 
@@ -284,10 +286,6 @@ footer {
 }
 
 .attribution-link:link, .attribution-link:visited {
-    text-decoration: none;
-    color: var(--green-accent);
-}
-
-.attribution-link:hover {
     text-decoration: underline;
+    color: var(--green-accent);
 }
