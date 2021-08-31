@@ -79,7 +79,7 @@
     border-radius: 5px;
     padding: 20px 40px;
 
-    transition-duration: 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .see-more-btn:hover {

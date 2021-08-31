@@ -27,7 +27,8 @@ app.get('/blog', (req, res) => {
 })
 
 app.get('/contact', (req, res) => {
-    res.send("Contact Page")
+    let activePage = { page: "contact" };
+    res.render("contact", { activePage });
 })
 
 app.listen(3000, () => {

@@ -1,0 +1,33 @@
+<%- include("./partials/head.ejs") %>
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+</head>
+<body>
+    <%- include("./partials/nav.ejs") %>
+    <main>
+        <div class="top-content">
+            <h1 class="contact-page-title">Contact Marshian Software</h1>
+            <div class="card large-card">
+                <h2 class="card-title contact-card-title">Message Marshian Software Today</h2>
+                <h3 class="contact-subheading">and learn how you can grow your business by 25% over the next 3 to 5 years!<sup>*</sup></h3>
+                <div class="form-container">
+                    <form class="contact-form" action="">
+                        <div class="input">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" size="38">
+                        </div>
+                        <div class="input">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" size="38">
+                        </div>
+                        <div class="input">
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" cols="40" rows="5"></textarea>
+                        </div>
+                        <button class="submit-form">Send Message</button>
+                    </form>
+                </div>
+                <p class="statistic-attribution">* Statistic refers to businesses with no current website - <a class="source-link" href="">source</a></p>
+            </div>
+        </div>
+    </main>
+<%- include("./partials/foot.ejs") %>

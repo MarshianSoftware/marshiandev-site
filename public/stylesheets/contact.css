@@ -1,0 +1,86 @@
+.contact-page-title {
+    font-family: Josefin Sans;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+
+    color: var(--green-accent);
+
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.contact-card-title {
+    margin: 7% 0 5px;;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.contact-subheading {
+    margin: 0 0 2%;
+    width: 583px;
+    font-family: Roboto Mono;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-container {
+    width: 80%;
+    height: 45%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    margin: 5px 0;
+    width: 100%;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.submit-form {
+    margin-top: 3%;
+    padding: 15px 25px;
+    background: none;
+    color: var(--green-accent);
+    border: 2px solid var(--green-accent);
+    border-radius: 3px;
+    
+    font-family: Roboto Mono;
+    font-weight: bold;
+    font-size: 20px;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-form:hover {
+    background-color: var(--green-accent);
+    color: black;
+}
+
+.statistic-attribution {
+    padding-top: 50px;
+    font-family: Roboto Mono;
+    font-size: 10px;
+}
+
+.source-link    {
+    color: var(--green-accent)
+}
