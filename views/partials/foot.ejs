@@ -11,12 +11,20 @@
             <a class="footer-nav-link" href="/blog">Blog</a>
             <a class="footer-nav-link" href="/contact">Contact</a>
         </div>
-        <button class="scroll-top-btn">Back to Top</button>
+        <button id="scroll-top" class="scroll-top-btn">Back to Top</button>
         <div class="footer-legal">
             <p class="legal-info">&copy; Marshian Software LLC 2021</p>
             <p class="legal-info">Social media icons by <a class="attribution-link" href="https://freeicons.io/profile/5596">shivani</a> on <a class="attribution-link" href="https://freeicons.io">freeicons.io</a></p>
         </div>
     </div>
+    <script>
+        let scrollBtn = document.querySelector("#scroll-top");
+        scrollBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.body.scrolltop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
 </footer>
 </body>
 </html>

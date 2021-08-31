@@ -7,6 +7,10 @@
     --marshian-red: #EB0303;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background-color: aqua; */
     background: var(--light-gray);
