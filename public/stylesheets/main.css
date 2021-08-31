@@ -24,6 +24,10 @@ body {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 .navbar {
     position: absolute;
@@ -81,11 +85,10 @@ body {
 
 main {
     margin-bottom: 100px;
-    left: calc(50% - 1152px/2 - 0.5px);
-    top: 0px;
 }
 
 .top-content {
+    margin: 0;
     background: url('/images/top-bg-banner.png');
     display: flex;
     flex-direction: column;

@@ -22,7 +22,8 @@ app.get('/about', (req, res) => {
 })
 
 app.get('/blog', (req, res) => {
-    res.send("Blog Page")
+    let activePage = { page: "blog" };
+    res.render('blog', { activePage });
 })
 
 app.get('/contact', (req, res) => {
