@@ -50,13 +50,13 @@ body {
     width: 520px;
     height: 124px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
 }
 
 .nav-link {
     margin: 0;
-    height: 46px;
+    padding: 10px 20px;
     text-decoration: none;
     color: var(--light-gray);
     font-family: Roboto Mono;
@@ -64,11 +64,16 @@ body {
     font-weight: bold;
     font-size: 28px;
     line-height: 37px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    transition-duration: 0.3s;
 }
 
 .nav-link:hover {
-    color: var(--green-accent);
-    border-bottom: 2px solid var(--green-accent);
+    /* padding-bottom: 8px; */
+    color: black;
+    background-color: var(--green-accent);
 }
 
 main {
