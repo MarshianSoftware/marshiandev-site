@@ -12,11 +12,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
-    res.render('home')
+    let activePage = { page: "home" };
+    res.render('home', { activePage });
 })
 
 app.get('/about', (req, res) => {
-    res.render('about')
+    let activePage = { page: "about" };
+    res.render('about', { activePage });
 })
 
 app.get('/blog', (req, res) => {

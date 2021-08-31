@@ -1,8 +1,8 @@
 <header class="navbar">
     <a href="/home"><img class="navbar-logo" src="/images/marshian-logo.png" alt="Marshian Software logo"></a>
     <nav class="navbar-links">
-        <a class="nav-link" href="/home">Home</a>
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link <%= activePage.page === 'home' ? 'active-nav' : '' %>" href="/home">Home</a>
+        <a class="nav-link <%= activePage.page === 'about' ? 'active-nav' : '' %>" href="/about">About</a>
         <a class="nav-link" href="/blog">Blog</a>
         <a class="nav-link" href="/contact">Contact</a>
     </nav>
